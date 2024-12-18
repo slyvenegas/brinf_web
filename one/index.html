@@ -29,23 +29,30 @@ BRINF
               </li><li>
               <a href="#faq" class="hover:text-black shrink-0"> CONTACT</a>
             </li><li class="shrink-0"> --> <a href="/" class="py-2 w-auto px-4 border-2 h-8 focus:ring-2 rounded-full border-black bg-black/5 hover:bg-transparent text-black duration-200 focus:ring-offset-2 hover:text-black inline-flex items-center justify-center ring-2 focus:ring-black ring-transparent">
-ENTER</a> </ul> </nav> </div> </div> </div> </div> <main class="flex-grow"> <section class="overflow-hidden relative"> <svg class="lg:-mx-4 relative" viewBox="0 0 1340 241" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.2973453 241V0.19H76.3291L141.007 190.297923ZM292.922 0.17719H347.967V241H292.922V0.17719ZM359.678 241V.17719H433.989L534.446 203.156H551.648V199.716C531.35 161.528 521.029 130.91 521.029 98.2265V0.17719H574.01.25 241H1116.8342C1041.49 47.3097 1041.14 59.0068 1037.7 68.6397L1012.9366.1Z" fill="whitebone"></path> </svg> <div class="px-8 md:px-12 py-24 max-w-2xl mx-auto relative"> <div> <!-- <span
-        class="inline-flex items-center justify-center gap-2 rounded-full px-3 py-1 text-sm leading-6 text-black ring-1 ring-zinc-200 bg-white ring-inset"
-      >
-        <p>1  Spots available</p>
-        <div class="h-2 w-2 rounded-full bg-black border-2 border-black "></div>
-
-        <div class="h-2 w-2 rounded-full border-black border-2 "></div>
-      </span> --> <h2 class="text-5xl mt-12 tracking-tighter font-normal text-white">
-Beyond all ideas of right &amp; wron, there is a field. I'll meet you there. <span class="block">- Rumi</span> </h2> </div> <ul class="grid grid-cols-1 text-base text-zinc-500 lg:grid-cols-2 max-w-xl gap-2 group h-full mt-12"> <!-- <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in turpis dapibus, viverra mauris at, tincidunt metus.
-        </p>
-      </div> --> <!-- <div>
-        <p>
-          Cras congue volutpat tellus in egestas. Nunc eget dignissim metus. Donec erat felis, elementum sit amet massa at, cursus cursus turpis.
-      </div> --> <em class="col-span-full text-sm mt-8 text-white"> <p>
-Embrace fire, fear and whatever you need. <span class="block text-white">⏤ you</span> </p> </em> </ul> </div> </section>         </main> <footer class="overflow-hidden"> <div class="px-8 md:px-12 py-12 max-w-2xl mx-auto"> <div class="flex flex-col gap-4"> <!-- <div>
+ENTER</a> </ul> </nav> </div> </div> </div> </div> <main class="flex-grow">  <section class="scroll-mt-24" id="faq"> <div class="px-8 md:px-12 py-32 max-w-2xl mx-auto"> <div class=""> <h2 class="text-3xl tracking-tighter font-light lg:text-4xl text-white">
+Not the answers, <span class="block">the questions.
+</span> </h2> <!-- <p class="mt-5 text-white">
+        Can't find your answer? Send an <a
+          class="text-blue-400 hover:text-black duration-200"
+          href="mailto:michael@andreuzza.com">email</a
+        > and minimal will get back to you .
+      </p> --> </div> <div x-data="{selected:null}"> <ul class="list-none text-black bg-white rounded-3xl divide-y divide-zinc-200 mt-8" role="list" @click="open = !open"> <li class="relative"> <button class="w-full p-4 text-left" @click="selected !== 1 ? selected = 1 : selected = null" type="button"> <div class="items-center flex justify-between text-black"> <p class="text-lg tracking-tight text-black">
+Who?
+</p> <svg class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"><path d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg> </div></button><div class="relative overflow-hidden duration-700 max-h-0 transition-all" style="" x-bind:style="selected == 1 ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''" x-ref="container1"> <div class="text-sm text-zinc-500 p-8 pt-0">
+My name is Sly Venegas, Front end Developer.
+              I also build products for myself. <a class="text-blue-500 hover:text-black" href="https://bitcoin.org/en/">ENTER HERE</a> </div> </div> </li><li class="relative"> <button class="w-full p-4 text-left" @click="selected !== 2 ? selected = 2 : selected = null" type="button"><div class="items-center flex justify-between text-black"> <p class="text-lg tracking-tight text-black">
+How?
+</p><svg class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"><path d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg> </div></button><div class="relative overflow-hidden duration-700 max-h-0 transition-all" style="" x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''" x-ref="container2"> <div class="text-sm text-zinc-500 p-8 pt-0">
+collaboration.
+</div> </div> </li><li class="relative"> <button class="w-full p-4 text-left" @click="selected !== 3 ? selected = 3 : selected = null" type="button"><div class="items-center flex justify-between text-black"> <p class="text-lg tracking-tight text-black">
+Where?
+</p><svg class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"><path d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg> </div></button><div class="relative overflow-hidden duration-700 max-h-0 transition-all" style="" x-bind:style="selected == 3 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''" x-ref="container2"> <div class="text-sm text-zinc-500 p-8 pt-0">
+Within.
+</div> </div> </li><li class="relative"> <button class="w-full p-4 text-left" @click="selected !== 4 ? selected = 4 : selected = null" type="button"><div class="items-center flex justify-between text-black"> <p class="text-lg tracking-tight text-black">
+Why?
+</p><svg class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" :class="{'rotate-180': open, 'rotate-0': !open}"><path d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg> </div></button><div class="relative overflow-hidden duration-700 max-h-0 transition-all" style="" x-bind:style="selected == 4 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''" x-ref="container2"> <div class="text-sm text-zinc-500 p-8 pt-0">
+believes
+</div> </div> </li> </ul> </div> </div> </section> </main> <footer class="overflow-hidden"> <div class="px-8 md:px-12 py-12 max-w-2xl mx-auto"> <div class="flex flex-col gap-4"> <!-- <div>
         <h2 class="text-white text-base lg:text-xl">Other projects</h2>
         <ul
           role="list"
