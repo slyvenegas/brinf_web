@@ -1,0 +1,41 @@
+---
+import imagesData from "../../data/images2.json";
+
+// Extraer solo los valores de 'src'
+const images = imagesData.map(item => item.src);
+---
+
+<div class="gallery">
+  {images.map((src) => <img src={src} alt="Gallery" />)}
+</div>
+
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Máximo 3 imágenes por fila */
+    gap: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.2);
+  }
+
+  /* Hacerlo responsive */
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila en pantallas medianas */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gallery {
+      grid-template-columns: repeat(1, 1fr); /* 1 imagen por fila en móviles */
+    }
+  }
+</style>

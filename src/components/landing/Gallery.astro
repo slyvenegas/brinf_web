@@ -1,0 +1,45 @@
+---
+const images = ["/Daedalus.jpg", "/Michael_the_Archangel.jpg", "/christ.jpg"];
+---
+
+<div class="gallery">
+  {images.map((src) => <img src={src} alt="Gallery" />)}
+</div>
+
+<div style="text-align: center;">
+    <iframe
+    width="0%"
+    height="0%"
+    scrolling="no"
+    frameborder="no"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1150358878&color=%235c797c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+  ></iframe><div
+    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"
+  >
+     <a
+      href="https://soundcloud.com/aaz65/nisi-dominus-cum-dederit-de-antonio-vivaldi-andreas-scholl-1"
+      title='"Nisi Dominus - Cum Dederit" De Antonio Vivaldi﻿- Andreas Scholl'
+      target="_blank"
+      style="color: #cccccc; text-decoration: none; "
+      >&quot;Nisi Dominus - Cum Dederit&quot; - Antonio Vivaldi</a>
+  </div>
+</div>
+
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.2);
+  }
+</style>
