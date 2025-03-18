@@ -1,0 +1,23 @@
+---
+import BaseLayoutB from "@/layouts/BaseLayoutB.astro";
+---
+
+<BaseLayoutB>
+    <div class="image-container">
+        <img src="https://pbs.twimg.com/media/Glk9L5Ua8AA0F33?format=jpg&name=small" alt="">
+    </div>
+
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ocupa toda la altura de la pantalla */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Para que no sobrepase el ancho de la pantalla */
+            height: auto;
+        }
+    </style>
+</BaseLayoutB>

@@ -1,10 +1,5 @@
 [
   {
-    "src": "/Daedalus.jpg",
-    "alt": "Daedalus, c. 1895 by Charles Holroyd.",
-    "description": "Daedalus, c. 1895 by Charles Holroyd."
-  },
-  {
     "src": "/christ.jpg",
     "alt": "Albrecht Dürer, Agony in the Garden, c.1515",
     "description": "Albrecht Dürer, Agony in the Garden, c.1515"
@@ -15,9 +10,19 @@
     "description": "Michael the Archangel."
   },
   {
+    "src": "/Daedalus.jpg",
+    "alt": "Daedalus, c. 1895 by Charles Holroyd.",
+    "description": "Daedalus, c. 1895 by Charles Holroyd."
+  },
+  {
     "src": "https://cdn.britannica.com/39/160739-050-E379CA63/The-Book-of-Revelation-cataclysm-Four-Horsemen-Apocalypse-Albrecht-Durer.jpg",
     "alt": "Albrecht Dürer: The Four Horsemen, from 'The Apocalypse' series, c. 1498.",
     "description": "Albrecht Dürer: The Four Horsemen, from 'The Apocalypse' series, c. 1498."
+  },
+  {
+  "src": "https://pbs.twimg.com/media/Glk8DImXsAAvSYQ?format=jpg&name=900x900",
+  "alt": "",
+  "description": ""
   },
   {
     "src": "https://pbs.twimg.com/media/GkQSad6X0AEsM7d?format=jpg&name=large",
@@ -25,9 +30,9 @@
     "description": ""
   },
   {
-    "src": "https://pbs.twimg.com/media/Ge2l67-XUAIbvws?format=jpg&name=medium",
-    "alt": "",
-    "description": ""
+    "src": "https://pbs.twimg.com/media/GewETAEXMAAt6Zs?format=jpg&name=large",
+    "alt": "Evelyn de Morgan, Black and gold compositional study for ‘Gloria in Excelsis’ c.1893",
+    "description": "Evelyn de Morgan, Black and gold compositional study for ‘Gloria in Excelsis’ c.1893"
   },
   {
     "src": "https://pbs.twimg.com/media/GlisWqpXUAAmSK6?format=jpg&name=4096x4096",
@@ -35,9 +40,9 @@
     "description": "Albrecht Dürer, The Crucifixion, from 'The Passion' c.1511"
   },
   {
-    "src": "https://pbs.twimg.com/media/Gi0IlPrWYAARi73?format=jpg&name=medium",
-    "alt": "W. Montgomery - Ulysses pouring wine into the giant's bowl",
-    "description": "W. Montgomery - Ulysses pouring wine into the giant's bowl"
+    "src": "https://pbs.twimg.com/media/GleJ02qWEAAsE6X?format=jpg&name=medium",
+    "alt": "Saint John devouring the book, of the Apocalypse” Albrecht Durer",
+    "description": "Saint John devouring the book, of the Apocalypse” Albrecht Durer"
   },
   {
     "src": "https://pbs.twimg.com/media/Gfw5AuXWoAATBqA?format=jpg&name=large",
@@ -55,13 +60,13 @@
     "description": ""
   },
   {
-    "src": "https://pbs.twimg.com/media/GewETAEXMAAt6Zs?format=jpg&name=large",
-    "alt": "Evelyn de Morgan, Black and gold compositional study for ‘Gloria in Excelsis’ c.1893",
-    "description": "Evelyn de Morgan, Black and gold compositional study for ‘Gloria in Excelsis’ c.1893"
+    "src": "https://pbs.twimg.com/media/Ge2l67-XUAIbvws?format=jpg&name=medium",
+    "alt": "",
+    "description": ""
   },
-{
-"src": "https://pbs.twimg.com/media/Glk8DImXsAAvSYQ?format=jpg&name=900x900",
-"alt": "",
-"description": ""
-}
+  {
+    "src": "https://pbs.twimg.com/media/Gi0IlPrWYAARi73?format=jpg&name=medium",
+    "alt": "W. Montgomery - Ulysses pouring wine into the giant's bowl",
+    "description": "W. Montgomery - Ulysses pouring wine into the giant's bowl"
+  }
 ]

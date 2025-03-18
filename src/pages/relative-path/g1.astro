@@ -1,0 +1,29 @@
+---
+import BaseLayoutB from "@/layouts/BaseLayoutB.astro";
+---
+
+<BaseLayoutB>
+    <div class="image-container">
+        <img src="https://pbs.twimg.com/media/Gjx4GHTXgAAyALr?format=jpg&name=900x900" alt="">
+       
+    </div>
+    <p>Down the Spinal Ladder by Santiago Caruso</p>
+
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ocupa toda la altura de la pantalla */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Para que no sobrepase el ancho de la pantalla */
+            height: auto;
+        }
+        p {
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</BaseLayoutB>
