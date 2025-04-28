@@ -2,15 +2,22 @@
 import imagesData from "../../data/images2.json";
 
 // Extraer src y link de cada imagen
-const images = imagesData.map(item => ({ src: item.src, link: item.link }));
+const images = imagesData.map((item) => ({
+  src: item.src,
+  link: item.link,
+  description: item.description,
+}));
 ---
 
 <div class="gallery">
-  {images.map(({ src, link }, index) => (
-    
-      <img src={src} alt="Gallery Image" />
-    
-  ))}
+  {
+    images.map(({ src, link, description }, index) => (
+      <div class="gallery-item" key={index}>
+        <img src={src} alt="Gallery Image" />
+        <div class="overlay">{description}</div>
+      </div>
+    ))
+  }
 </div>
 
 <style>
@@ -18,6 +25,11 @@ const images = imagesData.map(item => ({ src: item.src, link: item.link }));
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Máximo 3 imágenes por fila */
     gap: 10px;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
   }
 
   .gallery a {
@@ -34,10 +46,33 @@ const images = imagesData.map(item => ({ src: item.src, link: item.link }));
     transform: scale(1.2);
   }
 
+  /* Estilo del overlay */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  /* Mostrar el overlay al hacer hover */
+  .gallery-item:hover .overlay {
+    opacity: 1;
+  }
+
   /* Hacerlo responsive */
   @media (max-width: 768px) {
     .gallery {
-      grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila en pantallas medianas */
+      grid-template-columns: repeat(
+        2,
+        1fr
+      ); /* 2 imágenes por fila en pantallas medianas */
     }
   }
 
