@@ -83,18 +83,7 @@
     "description": "'Diogenes' by John William Waterhouse, 1882",
     "link": "/relative-path/g1"
   },
-  {
-    "src": "https://pbs.twimg.com/media/GmRzlZ0aoAARQc8?format=jpg&name=large",
-    "alt": "The Fireflies - Henri-Camille Danger (1896)",
-    "description": "The Fireflies - Henri-Camille Danger (1896)",
-    "link": "/relative-path/g1"
-  },
-  {
-    "src": "https://pbs.twimg.com/media/GlMDYinW8AIRRgT?format=jpg&name=medium",
-    "alt": "detail from Caravaggio’s Saint John in the Wilderness // 1604",
-    "description": "detail from Caravaggio’s Saint John in the Wilderness // 1604",
-    "link": "/relative-path/g1"
-  },
+  
   {
     "src": "https://pbs.twimg.com/media/GmMaikqaYAIui5u?format=jpg&name=4096x4096",
     "alt": "François Joseph Heim - Defeat of the Cimbri and Teutons by Marius",
@@ -102,10 +91,10 @@
     "link": "/relative-path/g1"
   },
   {
-    "src": "https://pbs.twimg.com/media/GlRzFrOWMAAjq_J?format=jpg&name=small",
-    "alt": "",
-    "description": "",
-    "link": ""
+    "src": "https://pbs.twimg.com/media/GlMDYinW8AIRRgT?format=jpg&name=medium",
+    "alt": "detail from Caravaggio’s Saint John in the Wilderness // 1604",
+    "description": "detail from Caravaggio’s Saint John in the Wilderness // 1604",
+    "link": "/relative-path/g1"
   },
   {
     "src": "https://pbs.twimg.com/media/GmdNsC2a8AAwAUk?format=jpg&name=large",
@@ -161,44 +150,29 @@
     "description": "Trifacial Trinity, anonymous artist (Cusco School), ca. 1750",
     "link": ""
   },
-  {
-    "src": "https://x.com/solas_na_greine/status/1928000265082335653/photo/1",
-    "alt": "Benedetto Gennari, ‘The Annunciation’ c.1686",
-    "description": "Benedetto Gennari, ‘The Annunciation’ c.1686",
-    "link": ""
-  },
-  {
-    "title": "Hector Summoning Paris to Battle by Angelica Kauffman (1775)",
-    "url": "https://pbs.twimg.com/media/GsmoZxqXkAAuQfD?format=jpg&name=large"
-  },
+  
   {
     "src": "https://pbs.twimg.com/media/GsmoZxqXkAAuQfD?format=jpg&name=large",
     "alt": "Hector Summoning Paris to Battle by Angelica Kauffman (1775)",
     "description": "Hector Summoning Paris to Battle by Angelica Kauffman (1775)",
     "link": ""
-  },
-  {
+},
+{
     "src": "https://pbs.twimg.com/media/GsmSOBVasAUENwZ?format=png&name=small",
     "alt": "Antonio da Correggio's breathtaking Assumption of the Virgin (1530) is a stunning fresco in Parma's Duomo.",
     "description": "Antonio da Correggio's breathtaking Assumption of the Virgin (1530) is a stunning fresco in Parma's Duomo.",
     "link": ""
-  },
-  {
+},
+{
+  "src": "https://pbs.twimg.com/media/GssR1LQXYAEIXD4?format=jpg&name=large",
+  "alt": "Bartolomeo Cavarozzi - Virgin and Child with Angels, ca.1620",
+  "description": "Bartolomeo Cavarozzi - Virgin and Child with Angels, ca.1620",
+  "link": ""
+},
+{
     "src": "https://pbs.twimg.com/media/Gsr_qDgXkAABpa2?format=jpg&name=4096x4096",
     "alt": "Bacchus Offering Wine in a Silver Bowl to a Marble Satyr Herm. 1880. Carl Wendling German 1851-1950. oil/canvas.",
     "description": "Bacchus Offering Wine in a Silver Bowl to a Marble Satyr Herm. 1880. Carl Wendling German 1851-1950. oil/canvas.",
     "link": ""
-  },
-  {
-    "src": "https://pbs.twimg.com/media/GssR1LQXYAEIXD4?format=jpg&name=large",
-    "alt": "Bartolomeo Cavarozzi - Virgin and Child with Angels, ca.1620",
-    "description": "Bartolomeo Cavarozzi - Virgin and Child with Angels, ca.1620",
-    "link": ""
-  },
-  {
-    "src": "https://pbs.twimg.com/media/GssW6Q-bYAAYCB_?format=jpg&name=large",
-    "alt": "https://brinf.vercel.app/agregar-imagen-Xyz123abc",
-    "description": "https://brinf.vercel.app/agregar-imagen-Xyz123abc",
-    "link": ""
-  }
+}
 ]
