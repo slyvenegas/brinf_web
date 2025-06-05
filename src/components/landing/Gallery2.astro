@@ -1,41 +1,36 @@
 ---
 import imagesData from "../../data/images.json";
-
-// Extraer solo los valores de 'src'
-const images = imagesData.map(item => item.src);
 ---
 
-<div class="gallery">
-  {images.map((src) => <img src={src} alt="Gallery" />)}
+<div class="grid gap-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 p-4">
+  {imagesData.map((item, index) => (
+    <div
+      class="relative group overflow-hidden rounded-2xl shadow-xl transition-all duration-700 hover:scale-105"
+      style={`animation: fadeInUp 0.6s ease ${(index + 1) * 0.1}s both;`}
+    >
+      <img
+        src={item.src}
+        alt="Artwork"
+        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+      />
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center p-4"
+      >
+        <p class="text-white text-center text-sm sm:text-base font-medium">{item.description}</p>
+      </div>
+    </div>
+  ))}
 </div>
 
 <style>
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Máximo 3 imágenes por fila */
-    gap: 10px;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-
-  .gallery img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-
-  .gallery img:hover {
-    transform: scale(1.2);
-  }
-
-  /* Hacerlo responsive */
-  @media (max-width: 768px) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila en pantallas medianas */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .gallery {
-      grid-template-columns: repeat(1, 1fr); /* 1 imagen por fila en móviles */
-    }
-  }
+}
 </style>

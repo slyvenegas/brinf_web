@@ -1,7 +1,6 @@
 ---
 import imagesData from "../../data/images2.json";
 
-// Extraer src y link de cada imagen
 const images = imagesData.map((item) => ({
   src: item.src,
   link: item.link,
@@ -10,75 +9,143 @@ const images = imagesData.map((item) => ({
 ---
 
 <div class="gallery">
-  {
-    images.map(({ src, link, description }, index) => (
-      <div class="gallery-item" key={index}>
-        <img src={src} alt="Gallery Image" />
-        <div class="overlay">{description}</div>
+  {images.map(({ src, description }, index) => (
+    <div class="gallery-item" key={index} data-src={src} data-desc={description}>
+      <img src={src} alt="Gallery Image" />
+      <div class="overlay">
+        <p>{description}</p>
       </div>
-    ))
-  }
+    </div>
+  ))}
 </div>
 
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox hidden">
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="Zoomed Image" />
+    <p id="lightbox-caption"></p>
+    <button class="close-btn">✕</button>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".gallery-item");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxCaption = document.getElementById("lightbox-caption");
+    const closeBtn = document.querySelector(".close-btn");
+
+    items.forEach(item => {
+      item.addEventListener("click", () => {
+        const src = item.getAttribute("data-src");
+        const desc = item.getAttribute("data-desc");
+
+        lightboxImg.src = src;
+        lightboxCaption.textContent = desc;
+        lightbox.classList.remove("hidden");
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.classList.add("hidden");
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.add("hidden");
+      }
+    });
+  });
+</script>
+
 <style>
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Máximo 3 imágenes por fila */
-    gap: 10px;
-  }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 1rem;
+}
 
-  .gallery-item {
-    position: relative;
-    overflow: hidden;
-  }
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  animation: fadeInUp 0.6s ease forwards;
+}
 
-  .gallery a {
-    display: block; /* Para que toda el área del enlace sea clickeable */
-  }
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
 
-  .gallery img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-  }
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
 
-  .gallery img:hover {
-    transform: scale(1.2);
-  }
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
 
-  /* Estilo del overlay */
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 14px;
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes fadeInUp {
+  from {
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transform: translateY(20px);
   }
-
-  /* Mostrar el overlay al hacer hover */
-  .gallery-item:hover .overlay {
+  to {
     opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  /* Hacerlo responsive */
-  @media (max-width: 768px) {
-    .gallery {
-      grid-template-columns: repeat(
-        2,
-        1fr
-      ); /* 2 imágenes por fila en pantallas medianas */
-    }
-  }
+/* Lightbox Styles */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
 
-  @media (max-width: 480px) {
-    .gallery {
-      grid-template-columns: repeat(1, 1fr); /* 1 imagen por fila en móviles */
-    }
-  }
-</style>
+.lightbox.hidden {
+  display: none;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+#lightbox-caption {
+  marg

@@ -1,0 +1,28 @@
+---
+---
+
+<html lang="es">
+  <head>
+    <title>Agregar Imagen</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      body { font-family: sans-serif; padding: 2rem; }
+      form { display: flex; flex-direction: column; gap: 1rem; max-width: 400px; }
+      input, button { padding: 0.5rem; font-size: 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Agregar nueva imagen</h1>
+    <form method="POST" action="/api/add-image">
+      <label>
+        Título:
+        <input type="text" name="title" required />
+      </label>
+      <label>
+        URL de la imagen:
+        <input type="url" name="url" required />
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
