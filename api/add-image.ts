@@ -34,8 +34,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const json = JSON.parse(content);
 
     // Agregar nuevo objeto
-    json.push({ title, url });
-
+    json.push({
+      src: url,
+      alt: title,
+      description: title,
+      link: ""
+    });
+    
     const newContent = Buffer.from(JSON.stringify(json, null, 2)).toString('base64');
 
     // Crear commit
