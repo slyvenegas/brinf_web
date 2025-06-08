@@ -83,7 +83,6 @@
     "description": "'Diogenes' by John William Waterhouse, 1882",
     "link": ""
   },
-  
   {
     "src": "https://pbs.twimg.com/media/GmMaikqaYAIui5u?format=jpg&name=4096x4096",
     "alt": "François Joseph Heim - Defeat of the Cimbri and Teutons by Marius",
@@ -150,29 +149,34 @@
     "description": "Trifacial Trinity, anonymous artist (Cusco School), ca. 1750",
     "link": ""
   },
-  
   {
     "src": "https://pbs.twimg.com/media/GsmoZxqXkAAuQfD?format=jpg&name=large",
     "alt": "Hector Summoning Paris to Battle by Angelica Kauffman (1775)",
     "description": "Hector Summoning Paris to Battle by Angelica Kauffman (1775)",
     "link": ""
-},
-{
+  },
+  {
     "src": "https://pbs.twimg.com/media/GsmSOBVasAUENwZ?format=png&name=small",
     "alt": "Antonio da Correggio's breathtaking Assumption of the Virgin (1530) is a stunning fresco in Parma's Duomo.",
     "description": "Antonio da Correggio's breathtaking Assumption of the Virgin (1530) is a stunning fresco in Parma's Duomo.",
     "link": ""
-},
-{
-  "src": "https://pbs.twimg.com/media/GssR1LQXYAEIXD4?format=jpg&name=large",
-  "alt": "Bartolomeo Cavarozzi - Virgin and Child with Angels, ca.1620",
-  "description": "Bartolomeo Cavarozzi - Virgin and Child with Angels, ca.1620",
-  "link": ""
-},
-{
+  },
+  {
+    "src": "https://pbs.twimg.com/media/GssR1LQXYAEIXD4?format=jpg&name=large",
+    "alt": "Bartolomeo Cavarozzi - Virgin and Child with Angels, ca.1620",
+    "description": "Bartolomeo Cavarozzi - Virgin and Child with Angels, ca.1620",
+    "link": ""
+  },
+  {
     "src": "https://pbs.twimg.com/media/Gsr_qDgXkAABpa2?format=jpg&name=4096x4096",
     "alt": "Bacchus Offering Wine in a Silver Bowl to a Marble Satyr Herm. 1880. Carl Wendling German 1851-1950. oil/canvas.",
     "description": "Bacchus Offering Wine in a Silver Bowl to a Marble Satyr Herm. 1880. Carl Wendling German 1851-1950. oil/canvas.",
     "link": ""
-}
+  },
+  {
+    "src": "https://pbs.twimg.com/media/Gs1khBrWsAI_AyV?format=jpg&name=large",
+    "alt": "Luciano Borzone: Baptism of Christ, 17th century",
+    "description": "Luciano Borzone: Baptism of Christ, 17th century",
+    "link": ""
+  }
 ]
