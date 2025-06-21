@@ -2,91 +2,109 @@
   {
     "src": "/christ.jpg",
     "alt": "Albrecht Dürer, Agony in the Garden, c.1515",
-    "description": "Albrecht Dürer, Agony in the Garden, c.1515"
+    "description": "Albrecht Dürer, Agony in the Garden, c.1515",
+    "link": "/21062025"
   },
   {
     "src": "/Michael_the_Archangel.jpg",
     "alt": "Michael the Archangel.",
-    "description": "Michael the Archangel."
+    "description": "Michael the Archangel.",
+    "link": ""
   },
   {
     "src": "/Daedalus.jpg",
     "alt": "Daedalus, c. 1895 by Charles Holroyd.",
-    "description": "Daedalus, c. 1895 by Charles Holroyd."
+    "description": "Daedalus, c. 1895 by Charles Holroyd.",
+    "link": ""
   },
   {
     "src": "https://cdn.britannica.com/39/160739-050-E379CA63/The-Book-of-Revelation-cataclysm-Four-Horsemen-Apocalypse-Albrecht-Durer.jpg",
     "alt": "Albrecht Dürer: The Four Horsemen, from 'The Apocalypse' series, c. 1498.",
-    "description": "Albrecht Dürer: The Four Horsemen, from 'The Apocalypse' series, c. 1498."
+    "description": "Albrecht Dürer: The Four Horsemen, from 'The Apocalypse' series, c. 1498.",
+    "link": ""
   },
   {
   "src": "https://pbs.twimg.com/media/Glk8DImXsAAvSYQ?format=jpg&name=900x900",
   "alt": "",
-  "description": ""
+  "description": "",
+  "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/GkQSad6X0AEsM7d?format=jpg&name=large",
     "alt": "",
-    "description": ""
+    "description": "",
+    "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/GewETAEXMAAt6Zs?format=jpg&name=large",
     "alt": "Evelyn de Morgan, Black and gold compositional study for ‘Gloria in Excelsis’ c.1893",
-    "description": "Evelyn de Morgan, Black and gold compositional study for ‘Gloria in Excelsis’ c.1893"
+    "description": "Evelyn de Morgan, Black and gold compositional study for ‘Gloria in Excelsis’ c.1893",
+    "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/GlisWqpXUAAmSK6?format=jpg&name=4096x4096",
     "alt": "Albrecht Dürer, The Crucifixion, from 'The Passion' c.1511",
-    "description": "Albrecht Dürer, The Crucifixion, from 'The Passion' c.1511"
+    "description": "Albrecht Dürer, The Crucifixion, from 'The Passion' c.1511",
+    "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/GleJ02qWEAAsE6X?format=jpg&name=medium",
     "alt": "Saint John devouring the book, of the Apocalypse” Albrecht Durer",
-    "description": "Saint John devouring the book, of the Apocalypse” Albrecht Durer"
+    "description": "Saint John devouring the book, of the Apocalypse” Albrecht Durer",
+    "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/Gfw5AuXWoAATBqA?format=jpg&name=large",
     "alt": "Saint Mary (the Blessed Virgin) as Virgin of the Seven Sorrows. Lithograph - Wellcome Collection",
-    "description": "Saint Mary (the Blessed Virgin) as Virgin of the Seven Sorrows. Lithograph - Wellcome Collection"
+    "description": "Saint Mary (the Blessed Virgin) as Virgin of the Seven Sorrows. Lithograph - Wellcome Collection",
+    "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/GevTREoX0AALa8h?format=jpg&name=large",
     "alt": "Saints Hours of Louis de Laval France 1480",
-    "description": "Saints Hours of Louis de Laval France 1480"
+    "description": "Saints Hours of Louis de Laval France 1480",
+    "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/GlnI9MhX0AAwFmy?format=png&name=900x900",
     "alt": "",
-    "description": ""
+    "description": "",
+    "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/Ge2l67-XUAIbvws?format=jpg&name=medium",
     "alt": "",
-    "description": ""
+    "description": "",
+    "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/Gi0IlPrWYAARi73?format=jpg&name=medium",
     "alt": "W. Montgomery - Ulysses pouring wine into the giant's bowl",
-    "description": "W. Montgomery - Ulysses pouring wine into the giant's bowl"
+    "description": "W. Montgomery - Ulysses pouring wine into the giant's bowl",
+    "link": ""
   },
   {
     "src": "https://pbs.twimg.com/media/GmYcD5EaYAAvGy5?format=png&name=large",
     "alt": "",
-    "description": ""
+    "description": "",
+    "link": ""
 },
 {
   "src": "https://pbs.twimg.com/media/GmQLOpSb0AAnTpz?format=jpg&name=900x900",
   "alt": "",
-  "description": ""
+  "description": "",
+  "link": ""
 },
 {
   "src": "https://pbs.twimg.com/media/Gpp240CXkAAJOg_?format=jpg&name=large",
   "alt": "A print of the statue of Our Lady of Sorrows in the Schmerzhaften Kapelle in Munich, Germany",
-  "description": "A print of the statue of Our Lady of Sorrows in the Schmerzhaften Kapelle in Munich, Germany"
+  "description": "A print of the statue of Our Lady of Sorrows in the Schmerzhaften Kapelle in Munich, Germany",
+  "link": ""
 },
 {
   "src": "https://pbs.twimg.com/media/GstaL59WQAAab0Q?format=jpg&name=medium",
   "alt": "The Alliance of Venus with Bacchus and Ceres by Jacob Matham (16th Century)",
-  "description": "The Alliance of Venus with Bacchus and Ceres by Jacob Matham (16th Century)"
+  "description": "The Alliance of Venus with Bacchus and Ceres by Jacob Matham (16th Century)",
+  "link": ""
 }
 ]
