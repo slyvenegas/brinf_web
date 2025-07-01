@@ -1,0 +1,39 @@
+---
+import images from "@/data/noinfo.json";
+const { index = 0 } = Astro.props;
+const image = images[index];
+---
+
+<style>
+  .hover-image {
+    transition: all 0.3s ease-in-out;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    background-color: #111;
+    display: block;
+  }
+
+  .hover-image:hover {
+    filter: blur(30px);
+    opacity: 0.6;
+    transform: scale(1.02);
+  }
+
+  .image-wrapper {
+    overflow: hidden;
+    border-radius: 1.5rem;
+    background-color: #111;
+    padding: 0.25rem;
+  }
+</style>
+
+{image && (
+  <div class="image-wrapper">
+    <img
+      src={image.src}
+      alt={image.alt}
+      class="hover-image w-full"
+      loading="lazy"
+    />
+  </div>
+)}
