@@ -1,0 +1,48 @@
+---
+import imagesData from "../../data/images5.json";
+---
+
+<div class="gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 p-6 perspective">
+  {
+    imagesData.map((item, index) => (
+      <a href={item.link} class="group relative block transform-style-3d" style={`animation: fadeInGallery 0.8s ease ${(index + 1) * 0.1}s both;`}>
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl transition-transform duration-700 transform group-hover:rotate-[1deg] group-hover:scale-105 group-hover:translate-z-[20px] bg-black/5">
+          <img
+            src={item.src}
+            alt="Artwork"
+            class="w-full h-full object-cover aspect-square transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:blur-[1.5px]"
+          />
+          <div class="absolute inset-0 bg-white/5 backdrop-blur-md opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-between p-4 z-10">
+            <p class="text-white text-sm sm:text-base font-semibold drop-shadow-md mt-auto">
+              {item.description}
+            </p>
+            <div class="flex justify-end">
+              <svg class="w-5 h-5 text-white/80 group-hover:animate-pulse" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+    ))
+  }
+</div>
+
+<style>
+  .perspective {
+    perspective: 1200px;
+  }
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  @keyframes fadeInGallery {
+    from {
+      opacity: 0;
+      transform: translateY(0px) scale(0.96) rotateX(5deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1) rotateX(0deg);
+    }
+  }
+</style>
