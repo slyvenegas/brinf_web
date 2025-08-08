@@ -1,0 +1,53 @@
+---
+// Image.astro
+// Componente responsive y minimalista para mostrar una imagen centrada.
+const {
+  src = "https://pbs.twimg.com/media/GxsKeEIXYAAr4UT?format=jpg&name=medium",
+  alt = "",
+} = Astro.props;
+if (!src) throw new Error("Image.astro: la prop `src` es requerida.");
+---
+
+<style>
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin-top: 10%;
+  }
+
+  img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+  }
+
+  .overlay-text {
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-size: calc(0.9vw + 0.1rem);
+    max-width: 40%;
+  }
+</style>
+
+<div class="image-container">
+  <img src={src} alt={alt} />
+  <div class="overlay-text">
+    The Spirit of Contemplation, Albert Toft, c.1901
+  </div>
+  <iframe
+    width=10%"
+    height="0"
+    scrolling="no"
+    frameborder="no"
+    allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/189158835&color=%238c94a4&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+  ></iframe>
+</div>
