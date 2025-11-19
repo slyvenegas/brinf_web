@@ -59,9 +59,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
 
     if (!commitRes.ok) {
-      const error = await commitRes.json();
-      return res.status(500).json({ error });
-    }
+  const error = await commitRes.text();
+  console.error("GitHub ERROR:", error);
+  return res.status(500).json({ error: "GitHub error: revisa logs" });
+}
+
 
     return res.status(200).json({ message: 'Imagen agregada correctamente' });
   } catch (err) {
